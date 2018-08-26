@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#ffd351"
+        android:orientation="horizontal"
+        android:gravity="center">
+        
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="#f7f5cf"
+            android:hint="Search"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
