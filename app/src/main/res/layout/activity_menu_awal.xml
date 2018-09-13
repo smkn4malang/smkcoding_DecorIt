@@ -5,71 +5,306 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MenuAwal"
+    android:background="@color/colorWhite"
     android:orientation="vertical">
 
     <LinearLayout
+        android:padding="10dp"
+        android:id="@+id/bagianatas"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:background="#FC8F00">
-
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_menu_button"
-            android:layout_marginLeft="10dp"
+            android:id="@+id/profile"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_user_3"
             android:layout_gravity="center"/>
+        <SearchView
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/colorWhite">
+        </SearchView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <LinearLayout
-            android:layout_gravity="center"
-            android:layout_width="250dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="15dp"
-            android:background="#fff"
-            android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <ImageView
-                android:layout_gravity="center"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@drawable/ic_loupe"
-                android:layout_marginLeft="10dp"/>
-
-            <EditText
-                android:layout_gravity="center"
+            <LinearLayout
+                android:id="@+id/bagiankategori"
+                android:padding="10dp"
+                android:layout_below="@id/bagianatas"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Search"/>
+                android:layout_height="200dp">
+
+                <RelativeLayout
+                    android:id="@+id/kategorifurniture"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:alpha="0.8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/backgroundfurniture"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Furniture"
+                        android:fontFamily="@font/strait"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/kategoridesign"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:alpha="0.5"
+                        android:layout_marginLeft="5dp"
+                        android:scaleType="centerCrop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/backgroundinterior"/>
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Design Interior"
+                        android:fontFamily="@font/strait"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@id/bagiankategori"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:background="#E0FFFF"
+                    android:id="@+id/kategori"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Popular Product"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/strait"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:id="@+id/item1"
+                    android:layout_below="@id/kategori">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_launcher_background"/>
+
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Minimalis Chair"
+                            android:fontFamily="@font/strait"
+                            android:textSize="22sp"/>
+
+                        <TextView
+                            android:fontFamily="@font/strait"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Prize : Rp. 100.000\n"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/strait"
+                            android:text="By Newbie"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/item2"
+                    android:padding="13dp"
+                    android:layout_below="@id/item1"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_launcher_background"/>
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Minimalis Chair"
+                            android:fontFamily="@font/strait"
+                            android:textSize="22sp"/>
+                        <TextView
+                            android:fontFamily="@font/strait"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Prize : Rp. 100.000\n"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/strait"
+                            android:text="By Newbie"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/item3"
+                    android:padding="13dp"
+                    android:layout_below="@id/item2"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_launcher_background"/>
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Minimalis Chair"
+                            android:fontFamily="@font/strait"
+                            android:textSize="22sp"/>
+
+                        <TextView
+                            android:fontFamily="@font/strait"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Prize : Rp. 100.000\n"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/strait"
+                            android:text="By Newbie"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/item4"
+                    android:padding="13dp"
+                    android:layout_below="@id/item3"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_launcher_background"/>
+
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Minimalis Chair"
+                            android:fontFamily="@font/strait"
+                            android:textSize="22sp"/>
+                        <TextView
+                            android:fontFamily="@font/strait"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Prize : Rp. 100.000\n"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/strait"
+                            android:text="By Newbie"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/item5"
+                    android:padding="13dp"
+                    android:layout_below="@id/item4"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_launcher_background"/>
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Minimalis Chair"
+                            android:fontFamily="@font/strait"
+                            android:textSize="22sp"/>
+                        <TextView
+                            android:fontFamily="@font/strait"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Prize : Rp. 100.000\n"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/strait"
+                            android:text="By Newbie"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
 
         </LinearLayout>
 
-        <ImageView
-            android:layout_gravity="center"
-            android:layout_marginLeft="15dp"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_heart"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Kategori"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:textAlignment="center"/>
-
-        <android.support.v4.view.ViewPager
-            android:id="@+id/pager"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
-
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

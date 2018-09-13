@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pembayaran"
+    android:orientation="vertical"
+    android:background="@color/colorGrey">
+
+    <LinearLayout
+        android:id="@+id/bagianatas"
+        android:background="@color/colorPrimary"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:text="Payment"
+            android:fontFamily="@font/strait"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginRight="25dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/barang"
+        android:layout_below="@id/bagianatas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:background="@color/colorWhite"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/item1"
+            android:layout_below="@id/kategori">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="103dp"
+                android:src="@drawable/kursi"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_marginLeft="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Modern Kitchen"
+                    android:fontFamily="@font/strait"
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:fontFamily="@font/strait"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Size : 4m x 5m\n"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/strait"
+                    android:text="By Newbie"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Balance : Rp. 1.000.000,-"
+        android:fontFamily="@font/strait"
+        android:layout_below="@id/barang"
+        android:background="@color/colorWhite"
+        android:id="@+id/balance"
+        android:padding="10dp"
+        android:textSize="15sp"/>
+
+    <RelativeLayout
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paymeny Via : "
+            android:fontFamily="@font/strait"
+            android:textSize="15sp"/>
+
+        <Spinner
+            android:layout_toRightOf="@id/text"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:textSize="20sp"
+        android:fontFamily="@font/strait"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

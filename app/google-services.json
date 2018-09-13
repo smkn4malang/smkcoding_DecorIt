@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "759284131907",
+    "firebase_url": "https://decorit-8008b.firebaseio.com",
+    "project_id": "decorit-8008b",
+    "storage_bucket": "decorit-8008b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759284131907:android:de3a1238171b9f4d",
+        "android_client_info": {
+          "package_name": "com.example.asus.decorit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759284131907-a51dvi246m5tbd9rgh7evtpoin777b8p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLCUioqf0ZTHAHXfUhYQjLurFvFxNNu-4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

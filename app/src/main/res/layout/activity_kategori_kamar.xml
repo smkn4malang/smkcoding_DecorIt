@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KategoriKamar"
+    android:orientation="vertical"
+    android:background="@color/colorGrey">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Bedroom Design"
+            android:textSize="23sp"
+            android:textAlignment="center"
+            android:layout_weight="13"
+            android:fontFamily="@font/strait"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_below="@id/bagiankategori"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:background="@color/colorWhite"
+                android:layout_marginTop="5dp"
+                android:padding="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:id="@+id/item1"
+                android:layout_below="@id/kategori">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/backgroundkamar"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Modern Kitchen"
+                        android:fontFamily="@font/strait"
+                        android:textSize="22sp"/>
+
+                    <TextView
+                        android:fontFamily="@font/strait"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Size : 4m x 5m\n"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/strait"
+                        android:text="By Newbie"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/colorWhite"
+                android:layout_marginTop="5dp"
+                android:padding="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:id="@+id/item2"
+                android:layout_below="@id/kategori">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/backgroundkamar"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Modern Kitchen"
+                        android:fontFamily="@font/strait"
+                        android:textSize="22sp"/>
+
+                    <TextView
+                        android:fontFamily="@font/strait"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Size : 4m x 5m\n"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/strait"
+                        android:text="By Newbie"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/colorWhite"
+                android:layout_marginTop="5dp"
+                android:padding="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:id="@+id/item3"
+                android:layout_below="@id/kategori">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/backgroundkamar"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Modern Kitchen"
+                        android:fontFamily="@font/strait"
+                        android:textSize="22sp"/>
+
+                    <TextView
+                        android:fontFamily="@font/strait"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Size : 4m x 5m\n"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/strait"
+                        android:text="By Newbie"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/colorWhite"
+                android:layout_marginTop="5dp"
+                android:padding="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:id="@+id/item4"
+                android:layout_below="@id/kategori">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/backgroundkamar"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Modern Kitchen"
+                        android:fontFamily="@font/strait"
+                        android:textSize="22sp"/>
+
+                    <TextView
+                        android:fontFamily="@font/strait"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Size : 4m x 5m\n"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/strait"
+                        android:text="By Newbie"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/colorWhite"
+                android:layout_marginTop="5dp"
+                android:padding="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:id="@+id/item5"
+                android:layout_below="@id/kategori">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/backgroundkamar"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Modern Kitchen"
+                        android:fontFamily="@font/strait"
+                        android:textSize="22sp"/>
+
+                    <TextView
+                        android:fontFamily="@font/strait"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Size : 4m x 5m\n"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/strait"
+                        android:text="By Newbie"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/colorWhite"
+                android:layout_marginTop="5dp"
+                android:padding="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:id="@+id/item6"
+                android:layout_below="@id/kategori">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/backgroundkamar"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Modern Kitchen"
+                        android:fontFamily="@font/strait"
+                        android:textSize="22sp"/>
+
+                    <TextView
+                        android:fontFamily="@font/strait"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Size : 4m x 5m\n"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/strait"
+                        android:text="By Newbie"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/colorWhite"
+                android:layout_marginTop="5dp"
+                android:padding="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:id="@+id/item7"
+                android:layout_below="@id/kategori">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/backgroundkamar"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Modern Kitchen"
+                        android:fontFamily="@font/strait"
+                        android:textSize="22sp"/>
+
+                    <TextView
+                        android:fontFamily="@font/strait"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Size : 4m x 5m\n"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/strait"
+                        android:text="By Newbie"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/colorWhite"
+                android:layout_marginTop="5dp"
+                android:padding="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:id="@+id/item8"
+                android:layout_below="@id/kategori">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/backgroundkamar"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Modern Kitchen"
+                        android:fontFamily="@font/strait"
+                        android:textSize="22sp"/>
+
+                    <TextView
+                        android:fontFamily="@font/strait"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Size : 4m x 5m\n"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/strait"
+                        android:text="By Newbie"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

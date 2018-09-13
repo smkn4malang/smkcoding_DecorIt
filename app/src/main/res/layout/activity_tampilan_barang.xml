@@ -5,63 +5,290 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TampilanBarang"
-    android:orientation="vertical"
-    android:background="@color/Background">
+    android:background="@color/colorGrey"
+    android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/gambar"
+    <LinearLayout
+        android:id="@+id/bagianatas"
+        android:background="@color/colorPrimary"
+        android:padding="5dp"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:background="@color/Black">
-    </ImageView>
+        android:layout_height="45dp"
+        android:orientation="horizontal">
 
-    <TextView
-        android:layout_below="@+id/gambar"
-        android:id="@+id/nama"
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:text="Minimalis Chair"
+            android:fontFamily="@font/strait"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginRight="25dp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:padding="8dp"
+        android:layout_below="@id/bagianatas"
+        android:id="@+id/scrolview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Kursi Portable"
-        android:textSize="30sp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"
-        android:textStyle="bold"/>
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_below="@+id/nama"
-        android:id="@+id/deskripsi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Deskripsi"
-        android:textSize="20sp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_below="@+id/deskripsi"
-        android:id="@+id/isideskripsi"
-        android:layout_marginLeft="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="blablablablablabla.b\nlablabl\nablablablablab\nlabla.blablabllablablablabla"/>
+            <RelativeLayout
+                android:id="@+id/gambarbarang"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/colorWhite">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/barangkursi"/>
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_like"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/description"
+                android:layout_below="@id/gambarbarang"
+                android:layout_marginTop="15dp"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
 
-    <TextView
-        android:layout_below="@+id/isideskripsi"
-        android:id="@+id/harga"
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="Harga = Rp 100.000"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Desctiption"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/strait"
+                    android:textStyle="bold"/>
 
-    <TextView
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This product is intended for people who want to relax"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/strait"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/detail"
+                android:layout_below="@id/description"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Product Detail"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/strait"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Creatot \t : Newbie"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Height \t    : 1,5m"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Width \t    : 0.8m"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/comment"
+                android:layout_below="@id/detail"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/textcomment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Comment"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/strait"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_below="@id/textcomment"
+                    android:id="@+id/comment1"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="id_Newbie  :  "
+                        android:fontFamily="@font/strait"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="This product design is very good, and also not easily damaged"
+                        android:fontFamily="@font/strait"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_below="@id/comment1"
+                    android:id="@+id/comment2"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="id_Newbie  :  "
+                        android:fontFamily="@font/strait"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="This product design is very good, and also not easily damaged"
+                        android:fontFamily="@font/strait"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_below="@id/comment2"
+                    android:id="@+id/comment3"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="id_Newbie  :  "
+                        android:fontFamily="@font/strait"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="This product design is very good, and also not easily damaged"
+                        android:fontFamily="@font/strait"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_below="@id/comment3"
+                    android:id="@+id/comment4"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="id_Newbie  :  "
+                        android:fontFamily="@font/strait"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="This product design is very good, and also not easily damaged"
+                        android:fontFamily="@font/strait"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_below="@id/comment4"
+                    android:id="@+id/comment5"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="id_Newbie  :  "
+                        android:fontFamily="@font/strait"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="This product design is very good, and also not easily damaged"
+                        android:fontFamily="@font/strait"/>
+
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/poscomment"
+                    android:layout_below="@+id/comment5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Comment"
+                    android:fontFamily="@font/strait"/>
+                <Button
+                    android:id="@+id/butoncomment"
+                    android:layout_below="@+id/poscomment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comment"
+                    android:fontFamily="@font/strait"
+                    android:background="@color/colorPrimary"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:layout_below="@+id/butoncomment"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buy"
+        android:padding="2dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="50dp"
-        android:background="@color/Orange"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Beli"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:textAlignment="center"/>
+        android:layout_height="40dp"
+        android:text="Buy"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/strait"/>
 
 </RelativeLayout>

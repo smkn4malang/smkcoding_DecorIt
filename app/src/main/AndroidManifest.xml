@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="akhir.tugas.com.tugasakhir">
+    package="com.example.asus.decorit">
 
     <application
         android:allowBackup="true"
@@ -12,22 +12,31 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignIn" />
-        <activity android:name=".LogIn" />
-        <activity android:name=".GoogleLogIn" />
-        <activity android:name=".EmailLogIn" />
-        <activity android:name=".Start" />
-        <activity android:name=".Profile" />
-        <activity android:name=".Saldo" />
-        <activity android:name=".Search" />
-        <activity android:name=".MenuUtama" />
-        <activity android:name=".NavBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".MenuAwal" />
+        <activity android:name=".KategoriFurniture" />
+        <activity android:name=".KategoriDesign" />
         <activity android:name=".TampilanBarang" />
-        <activity android:name=".MenuAwal"></activity>
+        <activity android:name=".TampilanDesign" />
+        <activity android:name=".KategoriKursi" />
+        <activity android:name=".KategoriMeja" />
+        <activity android:name=".KategoriRakBuku" />
+        <activity android:name=".KategoriLemari" />
+        <activity android:name=".KategoriDapur" />
+        <activity android:name=".KategoriKamarMandi" />
+        <activity android:name=".KategoriKamar" />
+        <activity android:name=".KategoriRuangTamu" />
+        <activity android:name=".Pembayaran" />
+        <activity android:name=".TampilanRegister" />
+        <activity android:name=".TampilanProfile" />
+        <activity android:name=".TampilanEdit"></activity>
     </application>
 
 </manifest>
