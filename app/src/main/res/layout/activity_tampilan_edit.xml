@@ -37,13 +37,6 @@
 
     <ImageView
         android:layout_below="@id/bagianatas"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/ic_new_file"
-        android:layout_alignParentEnd="true"/>
-
-    <ImageView
-        android:layout_below="@id/bagianatas"
         android:id="@+id/gambarprofile"
         android:layout_centerHorizontal="true"
         android:layout_width="150dp"
@@ -74,6 +67,7 @@
                 android:fontFamily="@font/strait"/>
 
             <EditText
+                android:id="@+id/editname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/colorPrimaryDark"/>
@@ -146,7 +140,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/border"
         android:text="Update"
         android:textColor="@color/colorWhite"/>

@@ -16,7 +16,7 @@
         android:layout_alignParentEnd="true"/>
 
     <ImageView
-        android:id="@+id/gambarprofile"
+        android:id="@+id/imgprofile"
         android:layout_centerHorizontal="true"
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -24,8 +24,9 @@
         android:layout_marginTop="50dp"/>
 
     <LinearLayout
+        android:id="@+id/konten"
         android:layout_marginTop="30dp"
-        android:layout_below="@id/gambarprofile"
+        android:layout_below="@id/imgprofile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorWhite"
@@ -40,14 +41,15 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Name : "
+                android:text="Name\t   : "
                 android:textSize="20sp"
                 android:fontFamily="@font/strait"/>
 
             <TextView
+                android:id="@+id/txtname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Newbie"
+                android:text="name"
                 android:fontFamily="@font/strait"
                 android:textSize="20sp"
                 android:textAlignment="viewEnd"/>
@@ -62,14 +64,15 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Email : "
+                android:text="Email\t   : "
                 android:textSize="20sp"
                 android:fontFamily="@font/strait"/>
 
             <TextView
+                android:id="@+id/txtemail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="newbie.n@email.com"
+                android:text="email"
                 android:fontFamily="@font/strait"
                 android:textSize="20sp"
                 android:textAlignment="viewEnd"/>
@@ -84,7 +87,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Alamat : "
+                android:text="Alamat\t : "
                 android:textSize="20sp"
                 android:fontFamily="@font/strait"/>
 
@@ -106,7 +109,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Email : "
+                android:text="Email\t   : "
                 android:textSize="20sp"
                 android:fontFamily="@font/strait"/>
 
@@ -121,5 +124,13 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnlogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:background="@color/colorPrimary"/>
 
 </RelativeLayout>

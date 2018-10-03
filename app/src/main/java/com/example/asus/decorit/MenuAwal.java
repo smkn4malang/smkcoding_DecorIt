@@ -28,6 +28,7 @@ public class MenuAwal extends AppCompatActivity{
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent i = new Intent(MenuAwal.this, TampilanProfile.class);
                 startActivity(i);
             }

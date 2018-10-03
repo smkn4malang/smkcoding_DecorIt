@@ -1,27 +1,35 @@
 {
   "project_info": {
-    "project_number": "759284131907",
-    "firebase_url": "https://decorit-8008b.firebaseio.com",
-    "project_id": "decorit-8008b",
-    "storage_bucket": "decorit-8008b.appspot.com"
+    "project_number": "753694612738",
+    "firebase_url": "https://decorit-c0a46.firebaseio.com",
+    "project_id": "decorit-c0a46",
+    "storage_bucket": "decorit-c0a46.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:759284131907:android:de3a1238171b9f4d",
+        "mobilesdk_app_id": "1:753694612738:android:de3a1238171b9f4d",
         "android_client_info": {
           "package_name": "com.example.asus.decorit"
         }
       },
       "oauth_client": [
         {
-          "client_id": "759284131907-a51dvi246m5tbd9rgh7evtpoin777b8p.apps.googleusercontent.com",
+          "client_id": "753694612738-ivb60kusqrrmbk97r8g61u9qq5aes1en.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.asus.decorit",
+            "certificate_hash": "e92661ab88548aa515f5692671d702fba9163c25"
+          }
+        },
+        {
+          "client_id": "753694612738-aqk5tl9ngg324pk79qq9vg4dqde6chmt.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDLCUioqf0ZTHAHXfUhYQjLurFvFxNNu-4"
+          "current_key": "AIzaSyByc2PYsmSFWUQ_CFww62vh2ikm3MYOif0"
         }
       ],
       "services": {
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "753694612738-aqk5tl9ngg324pk79qq9vg4dqde6chmt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
